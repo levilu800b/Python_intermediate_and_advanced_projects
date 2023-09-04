@@ -2,12 +2,12 @@ from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
-# TODO 1. Print report.
+# 1. Print report.
 money_machine = MoneyMachine()
 coffee_maker = CoffeeMaker()
 menu = Menu()
 
-# TODO 2. Check resources sufficient?
+# 2. Check resources sufficient?
 is_on = True
 
 while is_on:
