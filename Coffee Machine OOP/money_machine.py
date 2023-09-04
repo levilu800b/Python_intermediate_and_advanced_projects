@@ -1,11 +1,11 @@
 class MoneyMachine:
-    CURRENCY = "$"
+    CURRENCY = "£"
 
     COIN_VALUES = {
-        "quarters": 0.25,
-        "dimes": 0.10,
-        "nickles": 0.05,
-        "pennies": 0.01
+        "fifty-pence": 0.50,
+        "twenty-pence": 0.20,
+        "ten-pence": 0.10,
+        "five-pence": 0.05,
     }
 
     def __init__(self):
