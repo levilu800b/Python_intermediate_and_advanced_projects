@@ -10,8 +10,8 @@ my_number = os.environ.get("MY_NUMBER")
 twilio_number = os.environ.get("TWILIO_NUMBER")
 
 weather_params = {
-    "lat": -7.192070,
-    "lon": -48.207790,
+    "lat": 53.383331,
+    "lon": -1.466667,
     "appid": api_key,
     "cnt": 4,
 }
