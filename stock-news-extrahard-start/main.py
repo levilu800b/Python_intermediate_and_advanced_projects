@@ -17,3 +17,7 @@ stock_parameters = {
 stock_response = requests.get(STOCK_ENDPOINT, params=stock_parameters)
 stock_data = stock_response.json()["Time Series (Daily)"]
 stock_data_list = [value for (key, value) in stock_data.items()]
+yesterday_data = stock_data_list[0]
+yesterday_closing_price = yesterday_data["4. close"]
+
+
