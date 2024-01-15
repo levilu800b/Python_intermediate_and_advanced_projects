@@ -22,3 +22,7 @@ yesterday_closing_price = yesterday_data["4. close"]
 
 day_before_yesterday_data = stock_data_list[1]
 day_before_yesterday_closing_price = day_before_yesterday_data["4. close"]
+
+difference = float(yesterday_closing_price) - float(day_before_yesterday_closing_price)
+
+diff_percent = round((difference / float(yesterday_closing_price)) * 100)
