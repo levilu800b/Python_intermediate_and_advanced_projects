@@ -49,7 +49,7 @@ today = today.strftime("%Y%m%d")
 
 pixel_data = {
     "date": today,
-    "quantity": "15",
+    "quantity": input("How many hours did you work today? "),
 }
 
 # response = requests.post(url=pixel_creation_endpoint, json=pixel_data, headers=headers)
@@ -68,5 +68,5 @@ update_data = {
 # Delete a pixel
 delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today}"
 
-response = requests.delete(url=delete_endpoint, headers=headers)
-print(response.text)
+# response = requests.delete(url=delete_endpoint, headers=headers)
+# print(response.text)
