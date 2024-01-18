@@ -8,6 +8,7 @@ load_dotenv()
 
 USERNAME = os.getenv("USERNAME")
 TOKEN = os.getenv("TOKEN")
+GRAPH_ID = "graph1"
 
 pixela_endpoint = "https://pixe.la/v1/users"
 
@@ -36,5 +37,16 @@ headers = {
     "X-USER-TOKEN": TOKEN,
 }
 
-response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+# response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+# print(response.text)
+
+# Post a pixel
+pixel_creation_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
+
+pixel_data = {
+    "date": "20240118",
+    "quantity": "15",
+}
+
+response = requests.post(url=pixel_creation_endpoint, json=pixel_data, headers=headers)
 print(response.text)
