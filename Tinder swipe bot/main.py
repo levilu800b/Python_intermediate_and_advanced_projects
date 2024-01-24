@@ -3,8 +3,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException
 from time import sleep
 
-FB_EMAIL = YOUR FACEBOOK LOGIN EMAIL
-FB_PASSWORD = YOUR FACEBOOK PASSWORD
+FB_EMAIL = "YOUR FACEBOOK LOGIN EMAIL"
+FB_PASSWORD = "YOUR FACEBOOK PASSWORD"
 
 chrome_driver_path = "/Users/lenargasimov/Development/chromedriver"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
