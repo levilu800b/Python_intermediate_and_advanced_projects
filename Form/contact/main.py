@@ -8,6 +8,7 @@ OWN_PASSWORD = "YOUR OWN EMAIL PASSWORD"
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def get_all_posts():
     return render_template("index.html", all_posts=posts)
@@ -46,8 +47,8 @@ def send_email(name, email, phone, message):
 
 
 if __name__ == "__main__":
-    #if you want your web server to run in repl.it, use the next line:
+    # if you want your web server to run in repl.it, use the next line:
     app.run(host='0.0.0.0', port=8080)
 
-    #If you want your web server to run locally on your computer, use this:
+    # If you want your web server to run locally on your computer, use this:
     # app.run(debug=True)
